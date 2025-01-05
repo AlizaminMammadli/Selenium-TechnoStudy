@@ -1,161 +1,159 @@
-## Project Overview
+# ** Selenium Projects **
 
-This project contains user stories and acceptance criteria for testing user account management functionalities on the Akakce.com website, which are tested using Selenium in IntelliJ IDEA. Each user story defines the interactions users will have with the website and the acceptance criteria for verifying the correctness of those interactions.
+This project provides a comprehensive set of user stories and test scenarios aimed at testing user account management and e-commerce transactions on the Akakce.com, Demo Webshop, and e-Junkie platforms. The project is designed to test the core functions of each platform and includes acceptance criteria and test preconditions. The tests have been conducted using Selenium and IntelliJ IDEA.
 
 ---
 
-## Table of Contents
+## **Table of Contents**
 
 1. **Overview**
 2. **User Stories**
-    - US_101 - Create User Account
-    - US_102 - Account Validation Check
-    - US_103 - Log Out
-    - US_104 - Log In
-    - US_105 - Order List Check
-    - US_106 - Message Inbox Check
-    - US_107 - Delete Account
+    - **Akakce.com User Account Management**
+        - US_101 - Create User Account
+        - US_102 - Account Validation Check
+        - US_103 - Log Out
+        - US_104 - Log In
+        - US_105 - Order List Check
+        - US_106 - Message Inbox Check
+        - US_107 - Delete Account
+    - **Demo Webshop User Operations**
+        - US_201 - User Registration
+        - US_202 - Invalid User Registration
+        - US_203 - Log Out
+        - US_204 - User Login
+        - US_205 - Invalid User Login
+        - US_206 - Place Order
+        - US_207 - Survey Response
+        - US_208 - Coupon and Gift Card Usage
+        - US_209 - Download Order History
+    - **e-Junkie eBook Purchase Transactions**
+        - US_301 - Add eBook to Cart
+        - US_302 - Failed Payment and Bank Card
+        - US_303 - Failed Payment and Invalid Credit Card
+        - US_304 - Successful Payment and Confirmation
+        - US_305 - Payment and Download
+        - US_306 - Send Contact Message
+        - US_307 - Access e-Junkie Homepage
 3. **Test Environment and Requirements**
 4. **Negative Scenarios**
 
 ---
 
-## Overview
+## **Overview**
 
-This project is designed to test user account management features on the Akakce.com site. The user stories define various website functionalities and verify that they work correctly. Acceptance criteria and preconditions support these user stories by specifying the conditions under which each function should be tested.
-
----
-
-## User Stories
-
-### US_101 - Create User Account
-
-As a user, I should be able to create an account on Akakce.com so that I can have a personalized shopping experience.
-
-**Description**: The user can create an account by providing personal information and then personalize their profile.
-
-**Acceptance Criteria**:
-1. The user must enter details like first name, last name, email, password, gender, and birthdate to create the account.
-2. Upon providing correct information, the user should be redirected to the account validation page.
-
-**Preconditions**:
-- The browser (Chrome, Safari, or Firefox) must be installed and started.
-- The test environment must have internet access.
-- The password must be at least 8 characters long and contain both uppercase and lowercase letters as well as numbers.
+This project aims to test user account management and e-commerce operations on the Akakce.com, Demo Webshop, and e-Junkie platforms. Each user story details the operations performed on the website and provides acceptance criteria for verifying the correctness of these operations. Tests are conducted using Selenium and IntelliJ IDEA to ensure the accuracy of user interactions.
 
 ---
 
-### US_102 - Account Validation Check
+## **User Stories**
 
-As a user, I should be able to see my name in the profile section at the top right corner once logged in, ensuring a secure shopping experience.
+### **Akakce.com User Account Management**
 
-**Description**: After logging in successfully, the user's name should be displayed in the profile section at the top right.
+- **US_101 - Create User Account**  
+  The user should be able to create an account on Akakce.com with personal information.
 
-**Acceptance Criteria**:
-1. After logging in with valid credentials, the user’s name should appear in the top-right corner of the page.
-2. The displayed name must match the name provided during account creation.
+- **US_102 - Account Validation Check**  
+  After logging in, the user's name should appear in the profile section.
 
-**Preconditions**:
-- The user must have successfully created an account.
+- **US_103 - Log Out**  
+  The user should be able to log out from their account after logging in.
 
----
+- **US_104 - Log In**  
+  The user should be able to log in to Akakce.com using correct credentials.
 
-### US_103 - Log Out
+- **US_105 - Order List Check**  
+  After logging in, the user should be able to view their order list.
 
-As a user, I should be able to log out from my account on Akakce.com to ensure a secure experience.
+- **US_106 - Message Inbox Check**  
+  After logging in, the user should be able to access their message inbox.
 
-**Description**: The user should be able to log out after signing in for better security.
+- **US_107 - Delete Account**  
+  The user should be able to delete their account to protect their personal data.
 
-**Acceptance Criteria**:
-1. The user must be able to log out from their account.
-2. After logging out, the user should be redirected to the login page.
+### **Demo Webshop User Operations**
 
-**Preconditions**:
-- The user must be logged into the website.
+- **US_201 - User Registration**  
+  The user should be able to register on the online store.
 
----
+- **US_202 - Invalid User Registration**  
+  An error message should be shown if the user tries to register with the same email address.
 
-### US_104 - Log In
+- **US_203 - Log Out**  
+  The user should be able to log out from their account.
 
-As a user, I should be able to log in to Akakce.com so that I don't have to enter my personal preferences repeatedly.
+- **US_204 - User Login**  
+  The user should be able to log in to the online store.
 
-**Description**: After providing the correct login information, the user can access the site and start their shopping experience.
+- **US_205 - Invalid User Login**  
+  An error message should be shown when attempting to log in with an invalid email and password.
 
-**Acceptance Criteria**:
-1. If the user provides correct credentials, the login should be successful, and the user should be able to access their account.
+- **US_206 - Place Order**  
+  The user should be able to place an order on the online store.
 
-**Preconditions**:
-- The user’s account (email address and password) must be successfully created and validated.
+- **US_207 - Survey Response**  
+  The user should be able to respond to surveys.
 
----
+- **US_208 - Coupon and Gift Card Usage**  
+  The user should see an error message when using an invalid coupon or gift card.
 
-### US_105 - Order List Check
+- **US_209 - Download Order History**  
+  The user should be able to view and download their order history.
 
-As a user, I should be able to view my order history after logging in, so I can ensure that I am not making any untracked purchases.
+### **e-Junkie eBook Purchase Transactions**
 
-**Description**: After logging in, the user can view their order history.
+- **US_301 - Add eBook to Cart**  
+  The user should be able to add a demo eBook to their cart.
 
-**Acceptance Criteria**:
-1. After logging in, the user should be redirected to the order list page.
-2. If the order list is empty, an appropriate message should be displayed.
+- **US_302 - Failed Payment and Bank Card**  
+  The user should receive an error message if they try to make a payment with missing information.
 
-**Preconditions**:
-- The user’s account (email address and password) must be successfully created and validated.
-- The user must be logged in to check the order list.
+- **US_303 - Failed Payment and Invalid Credit Card**  
+  An error message should be shown when trying to make a payment with an invalid credit card.
 
----
+- **US_304 - Successful Payment and Confirmation**  
+  The user should receive a confirmation message after completing a payment with valid details.
 
-### US_106 - Message Inbox Check
+- **US_305 - Payment and Download**  
+  The user should be able to download the eBook after completing the payment.
 
-As a user, I should be able to check my message inbox after logging in to ensure I don't miss out on any special campaigns or notifications.
+- **US_306 - Send Contact Message**  
+  The user should be able to send a message using the contact form.
 
-**Description**: After logging in, the user will be redirected to the message inbox and can view notifications about campaigns.
-
-**Acceptance Criteria**:
-1. After logging in, the user should be directed to the message inbox.
-2. If the message inbox is empty, an appropriate message should be displayed.
-
-**Preconditions**:
-- The user’s account (email address and password) must be successfully created and validated.
-- The user must be logged in to check the message inbox.
-
----
-
-### US_107 - Delete Account
-
-As a user, I should be able to delete my account to ensure my personal data is protected.
-
-**Description**: The user can delete their account to protect their personal data.
-
-**Acceptance Criteria**:
-1. After logging in, the user should be able to delete their account from the system.
-2. When the correct password is entered during the account deletion process, the account should be successfully deleted.
-
-**Preconditions**:
-- The user’s account (email address and password) must be successfully created and validated.
-- The user must be logged into the account to delete it.
+- **US_307 - Access e-Junkie Homepage**  
+  The user should be able to access the e-Junkie homepage after being redirected.
 
 ---
 
-## Test Environment and Requirements
+## **Test Environment and Requirements**
 
-**Test Environment**: [https://www.akakce.com](https://www.akakce.com)
+- **Test Environment**:
+  - Akakce.com: https://www.akakce.com
+  - Demo Webshop: https://demowebshop.tricentis.com
+  - e-Junkie: https://shopdemo.e-junkie.com/
 
-**Browser Requirements**:
-- Chrome, Safari, or Firefox
+- **Browser Requirements**:
+  - Chrome, Safari, or Firefox
 
-Additionally, a user account must be created and tested with valid data.
-
----
-
-## Negative Scenarios
-
-Negative scenarios test the system's response to unexpected user behavior. These scenarios are important for ensuring a more robust and reliable user experience.
-
-**Example Negative Scenarios**:
-- When the user attempts to log in with an empty email and password, an error message should be shown.
-- When invalid payment information is entered, an appropriate error message should be displayed.
+- **Test Software**:
+  - IntelliJ IDEA
+  - Selenium
 
 ---
 
-This README document provides a comprehensive guide for testing user account management features on Akakce.com. Each user story is thoroughly defined, with acceptance criteria and preconditions for testing.
+## **Negative Scenarios**
+
+The robustness of the test scenarios has been verified with negative scenarios, including user errors and invalid inputs. Example negative scenarios:
+
+- Entering invalid or incomplete login information.
+- Attempting transactions with incorrect payment details.
+- Using invalid promo codes and coupons.
+
+These scenarios are essential for improving the application's resilience.
+
+---
+
+This README serves as a guide for testing user operations on the Akakce.com, Demo Webshop, and e-Junkie platforms. Each user story is supported by acceptance criteria and preconditions to properly test the functionality of the application.
+
+---
+
+Let me know if you need any further adjustments or translations!
