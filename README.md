@@ -153,7 +153,3 @@ These scenarios are essential for improving the application's resilience.
 ---
 
 This README serves as a guide for testing user operations on the Akakce.com, Demo Webshop, and e-Junkie platforms. Each user story is supported by acceptance criteria and preconditions to properly test the functionality of the application.
-
----
-
-Let me know if you need any further adjustments or translations!
