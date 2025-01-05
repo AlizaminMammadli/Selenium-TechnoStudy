@@ -1,4 +1,4 @@
-# ** Selenium Projects **
+##  Selenium Projects 
 
 This project provides a comprehensive set of user stories and test scenarios aimed at testing user account management and e-commerce transactions on the Akakce.com, Demo Webshop, and e-Junkie platforms. The project is designed to test the core functions of each platform and includes acceptance criteria and test preconditions. The tests have been conducted using Selenium and IntelliJ IDEA.
 
